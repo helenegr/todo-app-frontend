@@ -5,10 +5,17 @@ RADON TODO APP FRONTEND
 
 comming soon
 
-## Installation
-
-comming soon
-
 ## Requirements
 
-comming soon
+* Grunt
+* NodeJs
+* mongodb
+
+## Installation
+
+cd into folder and run npm install
+Start the server with "grunt" command inside the folder
+
+then navigate to http://localhost:3000
+
+
