@@ -9,7 +9,7 @@ Each task object should have three properties, title (string), compltetd (boolea
 When the application starts load all todos from the server, this can be done either before the application starts or async.
 
 As a plus the application should be able to:
-* mark all as done and submit that 
+* update all to completed 
 * delete all completed todos
 * only display completed todos
 * only display not completed todos
@@ -28,19 +28,19 @@ returns an array:
 [{title: 'my first title', completed: true, _id: '61265198461'}, {title: 'my second title', completed: false, _id: '65418132183'}]
 
 Create a new todo with:
-'/post-todo', use POST as a method.
+- '/post-todo', use POST as a method.
 pass the todo object as a property eg:
-data: todo: myTodoObject
+- data: todo: myTodoObject
 
 Update a single todo with:
-'/put-todo/the-id-for-the-todo', use PUT as a method.
+- '/put-todo/the-id-for-the-todo', use PUT as a method.
 pass the todo object as a propery eg
-data: todo: myTodoObject
+- data: todo: myTodoObject
 
 Update multiple todo objects with:
-'/put-todo', use PUT as a method.
+- '/put-todo', use PUT as a method.
 pass the todo object as a propery in an array eg
-data: todo: [myTodoObject]
+- data: todo: [myTodoObject]
 
 To delete a todo or multiple todos use the same method as Update 
 but with the endpoint '/delete-todo', use PUT as a method
