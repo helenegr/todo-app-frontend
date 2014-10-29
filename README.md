@@ -6,6 +6,9 @@ RADON TODO APP FOR FRONTEND DEVELOPER
 Create a todo application where you can add tasks, remove and update them. 
 Each task object should have three properties, title (string), compltetd (boolean) and an _id (this will be returned from from the server when we create a new todo and is the reference when we update or remove each item).
 
+The application should be a single page application so only work from the index.html file inside app/views.
+Javascript and css should be placed in the public folder.
+
 When the application starts load all todos from the server, this can be done either before the application starts or async.
 
 As a plus the application should be able to:
