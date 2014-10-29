@@ -1,14 +1,24 @@
 RADON TODO APP FOR FRONTEND DEVELOPER
 =================
 
-## introduction
+## Introduction
 
 Create a todo application where you can add tasks, remove and update them. 
 Each task object should have three properties, title (string), compltetd (boolean) and an _id (this will be returned from from the server when we create a new todo and is the reference when we update or remove each item).
 
 When the application starts load all todos from the server, this can be done either before the application starts or async.
 
+As a plus the application should be able to:
+* mark all as done and submit that 
+* delete all completed todos
+* only display completed todos
+* only display not completed todos
 
+As a big plus:
+* set up some tests for the application. mocha or yasmin for example.
+* Filter/search the todo-list for a specific todo.
+
+The application can be written in any style or with any framework as long as you can motivate it and keep in mind that the app should be reuseable.
 
 ## Backend endpoints
 
