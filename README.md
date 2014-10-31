@@ -30,27 +30,27 @@ You can find the design and wireframe for the application inside the design fold
 ## Backend endpoints
 
 GET all todos from the server with:
-- '/get-todo', use GET as a method.
+- '/get-todos', use GET as a method.
 - returns an array:
 - [{title: 'my first title', completed: true, _id: '61265198461'}, {title: 'my second title', completed: false, _id: '65418132183'}]
 
 Create a new todo with:
-- '/post-todo', use POST as a method.
+- '/post-todos', use POST as a method.
 - pass the todo object as a property eg:
 - data: todo: myTodoObject
 
 Update a single todo with:
-- '/put-todo/the-id-for-the-todo', use PUT as a method.
+- '/put-todos/the-id-for-the-todo', use PUT as a method.
 - pass the todo object as a propery eg
 - data: todo: myTodoObject
 
 Update multiple todo objects with:
-- '/put-todo', use PUT as a method.
+- '/put-todos', use PUT as a method.
 - pass the todo object as a propery in an array eg
 - data: todo: [myTodoObject]
 
 To delete a todo or multiple todos use the same method as Update 
-but with the endpoint '/delete-todo', use PUT as a method
+but with the endpoint '/delete-todos', use PUT as a method
 
 Each request allways returns the updated object
 
